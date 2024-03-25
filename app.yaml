@@ -1,0 +1,8 @@
+runtime: python39
+
+entrypoint: gunicorn sentiment_analysis.wsgi:application
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "sentiment_analysis.settings"
+
+

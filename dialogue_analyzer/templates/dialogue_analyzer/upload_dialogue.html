@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Upload a dialogue file</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="dialogue" accept=".txt,audio/*" required>
+        <button type="submit">Upload and Analyze</button>
+    </form>
+    {% if insights %}
+        <h2>Insights:</h2>
+        <ul>
+            {% for insight in insights %}
+                <li>{{ insight }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
