@@ -2,6 +2,7 @@
 
 This is a web application that analyses the sentiments and psychological insights about people conversing with each other. 
 
+API Key: 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
 
 ## Folder structure
 
